@@ -1,13 +1,8 @@
 package hr.markic.dto;
 
-import lombok.Getter;
-import lombok.Setter;
-
 import java.time.LocalDate;
 
-@Getter
-@Setter
-public class UserDTO extends PersonDTO {
+public class UserDTO {
 
     private Long id;
 
@@ -18,4 +13,12 @@ public class UserDTO extends PersonDTO {
     private LocalDate dateOfBirth;
 
     private String userName;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }
